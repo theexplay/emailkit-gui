@@ -1,0 +1,24 @@
+{
+    "basedir": "src/modules",
+    "newline": "\n",
+    "indent": "  ",
+    "file_write_options": "utf8",
+    "files": {
+        ".": {
+            "filename": "{{NAME}}",
+            "styleImport": "_",
+            "content": "{{NEWLINE}}.{{NAME}} {{NEWLINE}}{{INDENT}}// your code here{{NEWLINE}}",
+            "extension": "styl"
+        },
+        "_": {
+            "filename": "__",
+            "content": "// your vars and mixins here{{NEWLINE}}",
+            "extension": "styl"
+        },
+        "z": {
+            "filename": "{{NAME}}",
+            "extension": "js",
+            "content": "// your code here{{NEWLINE}}"
+        }
+    }
+}

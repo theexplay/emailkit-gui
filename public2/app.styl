@@ -1,0 +1,44 @@
+$gray = #262B30
+$white = #ffffff
+
+html,
+body
+  width: 100%
+  margin: 0
+  padding: 0
+  background-color: #F0F2F4
+
+.nav
+  width: 40px
+  height: 100vh
+  background-color: $gray
+
+  &__item
+    position: relative
+    padding-left: 48px
+    padding-right: 8px
+    height: 40px
+    width: @height
+    line-height: @height
+    color: $white
+    white-space: nowrap
+
+
+    &[data-value="all"]
+      &::before
+      &::after
+        content: ''
+        position: absolute
+        left: 13px
+        top: 50%
+        display: inline-block
+        width: 10px
+        height: 10px
+        border: 2px solid #ffffff
+        transform: translateY(-50%) rotate(34deg) skewY(-34deg)
+        background-color: $gray
+
+      &::before
+        top: 26px
+        left: 14px
+

@@ -1,0 +1,32 @@
+{
+  "name": "emailkit-gui",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0",
+    "del": "^3.0.0",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-notify": "^3.0.0",
+    "gulp-stylus": "^2.6.0",
+    "gulp4": "^4.0.2",
+    "reasty": "0.0.6",
+    "stylus": "^0.54.5",
+    "vinyl-named": "^1.1.0",
+    "webpack-stream": "^3.2.0"
+  },
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-router": "^4.1.2",
+    "react-history": "^0.18.2"
+  }
+}
