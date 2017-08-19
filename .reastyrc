@@ -7,7 +7,7 @@
         ".": {
             "filename": "{{NAME}}",
             "styleImport": "_",
-            "content": "{{NEWLINE}}.{{NAME}} {{NEWLINE}}{{INDENT}}// your code here{{NEWLINE}}",
+            "content": "{{NEWLINE}}.{{NAME}}{{NEWLINE}}{{INDENT}}// your code here",
             "extension": "styl"
         },
         "_": {
@@ -18,7 +18,7 @@
         "z": {
             "filename": "{{NAME}}",
             "extension": "js",
-            "content": "// your code here{{NEWLINE}}"
+            "content": "import React from 'react';{{NEWLINE}}{{NEWLINE}}class {{NAME}} extends React.Component {{{NEWLINE}}{{INDENT}}{{INDENT}}render() {{{NEWLINE}}{{INDENT}}{{INDENT}}{{INDENT}}{{INDENT}}return (){{NEWLINE}}{{INDENT}}{{INDENT}}}{{NEWLINE}}}{{NEWLINE}}{{NEWLINE}}export default {{NAME}};"
         }
     }
 }
