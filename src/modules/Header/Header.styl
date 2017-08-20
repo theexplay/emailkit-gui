@@ -1,4 +1,32 @@
 @import '__.styl'
+@import '../Nav/__.styl'
 
 .Header
-  //
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  background-color: #fff
+  height: $header__height
+  z-index: 99
+
+  &::before
+    content: ''
+    position: absolute
+    bottom: 0
+    left: $nav__width
+    right: 0
+    height: 1px
+    background-color: #d5dadf
+
+  & &__logo
+    display: block
+    width: 200px
+    height: 100%
+    text-align: center
+    background-color: #6a6ae4
+
+    &::before
+      line-height: $header__height
+      color: #fff
+      font-size: 30px

@@ -1,13 +1,15 @@
 import React from 'react';
 import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
+import Nav from '../Nav/Nav';
+import Builder from '../Builder/Builder';
 
 class App extends React.Component {
     render() {
         return (
             <div className="App">
                 <Header />
-                <Footer />
+                <Nav />
+                <Builder />
             </div>
         )
     }

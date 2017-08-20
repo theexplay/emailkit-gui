@@ -1,0 +1,38 @@
+// your vars and mixins here
+@import "icons__vars.styl"
+
+iconFont()
+  @font-face
+    font-family: $_i__font-name
+    src: url('fonts/'$_i__font-name'.eot?#iefix') format('embedded-opentype'),
+        url('fonts/'$_i__font-name'.woff') format('woff'),
+        url('fonts/'$_i__font-name'.ttf')  format('truetype')
+    font-weight: normal
+    font-style: normal
+
+icon($icon, $after = false)
+  if $after
+    &::after
+      icon__styles($icon)
+      {block}
+  else
+    &::before
+      icon__styles($icon)
+      {block}
+
+icon__styles($unicode)
+  content: $unicode
+  display: inline-block
+  vertical-align: top
+  font-family: $_i__font-name
+  font-style: normal
+  font-weight: normal
+  line-height: 1
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  user-select: none
+
+icon__all($icons)
+  for $icon in $icons
+    .Icon_{$icon}
+      icon(lookup('$_i__'+$icon))
