@@ -1,6 +1,7 @@
 @import '__.styl'
 @import '../Nav/__.styl'
 @import '../Header/__.styl'
+@import '../App/__.styl'
 
 .Builder
   position: absolute
@@ -8,7 +9,8 @@
   top: $header__height
   right: 0
   bottom: 0
-  background-color: #f9f9f9
+  background-color: #fff
+  min-width: ($app__width - $nav__width)
 
   &__container
     width: 610px
@@ -17,4 +19,20 @@
   &__header
     background-image: url(images/builder__header.jpg)
     width: 610px
-    height: 160px
+    height: 124px
+    background-position: 0 100%
+
+  &__area
+    background-color: #f9f9f9
+
+    &:empty
+      position: relative
+      min-height: 300px
+      border: 1px dashed #6a6ae4
+
+      &::before
+        content: 'Empty block here'
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
