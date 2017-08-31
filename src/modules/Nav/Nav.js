@@ -30,7 +30,7 @@ class Nav extends React.Component {
             }
         ];
 
-        const Builder = [
+        const Constructor = [
             {
                 title: 'All layers',
                 icon: 'layer'
@@ -53,7 +53,7 @@ class Nav extends React.Component {
                 </div>
                 <div className="Nav__category">
                     <div className="Nav__title">Building</div>
-                    {this.renderMenuItem(Builder)}
+                    {this.renderMenuItem(Constructor)}
                 </div>
             </div>
         )

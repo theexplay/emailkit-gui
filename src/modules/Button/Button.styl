@@ -1,0 +1,32 @@
+@import '__.styl'
+
+.Button
+  display: inline-block
+  height: 40px
+  padding: 12px 26px 12px 30px
+  text-align: center
+  color: #fff
+  box-sizing: border-box
+  background-color: #ec174f
+  border-radius: 4px
+  cursor: pointer
+  font-size: 16px
+  line-height: @font-size
+  user-select: none
+  border: 0
+
+  &:hover
+    background-color: darken(@background-color, 10%)
+
+  &:active
+    background-color: darken(@background-color, 20%)
+
+
+  &_disabled
+    background-color: darken(@background-color, 40%)
+    color: darken(@color, 40%)
+    cursor: default
+
+    &:hover,
+    &:active
+      background-color: darken(#ec174f, 40%)

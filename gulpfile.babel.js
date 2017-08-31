@@ -65,9 +65,9 @@ gulp.task('styles', () => {
 gulp.task('scripts', () => {
     return gulp.src('src/app.js')
         .pipe(webpackStream(require('./webpack.config.js')))
-        .on("error", notify.onError(function (error) {
-            this.emit('end');
-            return "Message to the notifier: " + error.message;
+        .on("error", notify.onError({
+            message: "Error: <%= error.message %>",
+            title: "Error in scripts task"
         }))
         .pipe(gulp.dest('public/'));
 });
