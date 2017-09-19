@@ -34,7 +34,7 @@ class App extends React.Component {
     render() {
         return (
             <div className="App">
-                {this.state.authorized === null ? <Loader/> : this.state.authorized ? <Constructor/> : <Auth/> }
+                {this.state.authorized === null ? <Loader/> : this.state.authorized ? <Redirect to={'/projects'}/> : <Auth/> }
             </div>
         )
     }

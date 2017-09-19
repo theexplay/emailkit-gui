@@ -6,6 +6,7 @@ import { PATHS } from './modules/_common/_common';
 import App from './modules/App/App';
 import NotFound from './modules/NotFound/NotFound';
 import Constructor from './modules/Constructor/Constructor';
+import Projects from './pages/Projects/Projects';
 
 // Firebase config
 const config = {
@@ -25,7 +26,7 @@ const Root = () => (
     <Router>
         <Switch>
             <Route path={PATHS.HOME} exact component={App}/>
-            <Route path={PATHS.CONSTRUCTOR} component={Constructor} />
+            <Route path={PATHS.CONSTRUCTOR} component={Projects} />
             <Route component={NotFound}/>
         </Switch>
     </Router>

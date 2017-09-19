@@ -1,5 +1,5 @@
 {
-    "basedir": "src/modules",
+    "basedir": "src",
     "newline": "\n",
     "indent": "  ",
     "file_write_options": "utf8",

@@ -26,9 +26,11 @@
     width: 200px
     height: 100%
     text-align: center
-    background-color: #6a6ae4
 
     &::before
-      line-height: $header__height
-      color: #fff
+      background-color #6a6ae4
+      background-image: linear-gradient(#0184ca, #113c6c);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       font-size: 30px
+      line-height: $header__height
