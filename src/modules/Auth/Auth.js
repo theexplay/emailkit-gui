@@ -3,6 +3,7 @@ import firebase from 'firebase';
 import Icon from '../Icon/Icon';
 import { PATHS } from '../_common/_common';
 import { BrowserRouter as Router, Route, Link, Redirect, withRouter } from 'react-router-dom';
+// import ReactSVG from 'react-svg';
 
 export default class Auth extends React.Component {
 
@@ -75,6 +76,11 @@ export default class Auth extends React.Component {
                 <div ref="parallax__1" className="Auth__parallax">
                     <Icon name='emailKit' className="Modal__logo" />
                 </div>
+                {/*<ReactSVG*/}
+                  {/*path="emailKit.svg"*/}
+                  {/*callback={svg => console.log(svg)}*/}
+                  {/*className="example"*/}
+                {/*/>*/}
                 <div ref="parallax__2" className="Auth__parallax">
                     <div className="Modal Modal_auth">
                         <div  className="Modal__container">

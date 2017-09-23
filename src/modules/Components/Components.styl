@@ -1,0 +1,84 @@
+@import '__.styl'
+
+.Components
+  background-color: #ffffff
+  height: 100%
+  overflow: hidden
+
+  &__title
+    text-align: center
+    font-size: 18px
+    line-height: 18px
+    padding: 14px 0 4px
+
+    span
+      position: relative
+
+      &::before
+        content: '+'
+        position: absolute
+        top: 50%
+        right: 100%
+        transform: translateY(-50%)
+        height: 20px
+        width: 20px
+        line-height: @height
+        color: #fff
+        font-size: 20px
+        margin-right: 4px
+        border-radius: 4px
+        background: #48dd85
+
+  &__description
+    text-align: center
+    color: rgba(0,0,0,.6)
+    margin-top: 16px
+    margin-bottom: -18px
+
+  &__list
+    padding: 24px 16px
+    margin-left: -5px
+    margin-right: -5px
+
+  &__item
+    position: relative
+    width: 50%
+    display: inline-block
+    padding-bottom: 50%
+    box-sizing: border-box
+    user-select: none
+
+    &-container
+      position: absolute
+      left: 5px
+      right: @left
+      top: @left
+      bottom: @left
+      background-color: #f7f9fa
+      border-radius: 8px
+      text-align: center
+
+    &-image
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 28px
+      text-align: center
+      font-size: 0
+
+      &::before
+        content: ''
+        display: inline-block
+        vertical-align: middle
+        height: 100%
+
+      img
+        display: inline-block
+        vertical-align: middle
+
+    &-text
+      position: absolute
+      left: 0
+      right: 0
+      bottom: 12px

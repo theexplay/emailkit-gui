@@ -6,7 +6,12 @@ class Header extends React.Component {
         return (
             <header className="Header">
                 <Icon className="Header__logo" name="emailKit"/>
-                <div className="Header__user"></div>
+                <div className="Header__menu">
+                    <div className="Header__menu-item active">Build</div>
+                    <div className="Header__menu-item">Test send</div>
+                    <div className="Header__menu-item">Preview</div>
+                    <div className="Header__menu-item">Code</div>
+                </div>
             </header>
         )
     }

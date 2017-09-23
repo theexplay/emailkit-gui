@@ -5,24 +5,44 @@
 
 .Constructor
   position: absolute
-  left: $nav__width
+  left: 0
   top: $header__height
   right: 0
   bottom: 0
-  background-color: #fff
-  min-width: ($app__width - $nav__width)
+  background-color: $bg-color
+  min-width: $app__width
 
-  &__container
-    width: 610px
+  &__sidebar
+    position: absolute
+    left: 0
+    top: 24px
+    bottom: 0
+    width: 100%
+    max-width: 250px
+    border-top-right-radius: 10px
+    overflow: hidden
+
+  &__add-components
+    height: 100%
+
+  &__main
+    position: absolute
+    left: 250px
+    top: 0
+    right: 0
     margin: 24px auto
+    padding: 0 20px
+    box-sizing: border-box
 
   &__header
-    background-image: url(images/constructor__header.jpg)
+    background-image: url('modules/Constructor/images/сonstructor__header.jpg')
     width: 610px
     height: 124px
     background-position: 0 100%
 
   &__area
+    width: 610px
+    margin: 0 auto
     background-color: #f9f9f9
 
     &:empty
